@@ -1,0 +1,27 @@
+host: localhost:8000
+info:
+  contact:
+    name: harrison
+    url: https://github.com/harrisonhjc/go-vue-project
+  description: Gin swagger
+  license:
+    name: Apache 2.0
+    url: http://www.apache.org/licenses/LICENSE-2.0.html
+  title: Gin swagger
+  version: "1.0"
+paths:
+  /v1/line:
+    get:
+      consumes:
+      - application/json
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: '{"success":true,"data":{},"msg":"获取成功"}'
+          schema:
+            type: string
+      summary: Get line information
+      tags:
+      - Line
+swagger: "2.0"
